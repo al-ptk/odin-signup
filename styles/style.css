@@ -1,12 +1,22 @@
 :root {
     font-size: 10px;
     font-family: Inter, sans-serif;
+    --nickel: #797e78;
+    --gray-x-11-gray: #bab7b5;
+    --light-grullo: #dcc2b5;
+    --grullo: #ac988e;
+    --feldgrau: #57625b;
+    --feldgrau-transparent: #57625bb3;
+    --whitish-gray: #D4DCDF;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img.background-image{
@@ -18,3 +28,81 @@ img.background-image{
     z-index: -1;
 }
 
+.transparent-card {
+    background-color: var(--feldgrau-transparent);
+    width: 800px;
+    height: 600px;
+    flex: initial;
+    display: flex;
+}
+
+.hero-intro {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    height: 50%;
+    padding: 50px;
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--light-grullo);
+}
+
+.hero-description {
+    height: 50%;
+    padding: 50px;
+    font-size: 2rem;
+    color: var(--whitish-gray);
+}
+
+.modal-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    --content-width: 90%;
+}
+
+.tabs {
+    height: 10%;
+    width: var(--content-width);
+    display: flex;
+}
+
+.tab {
+    border-style: none;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px 25px 0 0;
+}
+
+.tab-active {
+    background-color: var(--gray-x-11-gray);
+}
+
+.tab-inactive {
+    background-color: var(--nickel);
+}
+
+.user-data {
+    background-color: var(--gray-x-11-gray);
+    height: 80%;
+    width: var(--content-width);
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.text-label {
+    display: block;
+}
+
+.text-field {
+    display: block;    
+}
