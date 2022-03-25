@@ -8,6 +8,7 @@
     --feldgrau: #57625b;
     --feldgrau-transparent: #57625bb3;
     --whitish-gray: #D4DCDF;
+    --graphite: #222222;
 }
 
 body {
@@ -78,14 +79,18 @@ button.tab {
     height: 100%;
     width: 50%;
     border-radius: 25px 25px 0 0;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 button.tab-active {
     background-color: var(--gray-x-11-gray);
+    color: var(--feldgrau);
 }
 
 button.tab-inactive {
-    background-color: var(--nickel);
+    background-color: var(--feldgrau);
+    color: var(--gray-x-11-gray);
 }
 
 form.user-data {
@@ -100,20 +105,27 @@ form.user-data {
     justify-content: space-evenly;
 }
 
-form.user-data>fieldset{
+fieldset.input-container{
+    position: relative;
     border: 1px solid;
-    border-radius: 25px;;
-    padding: 2px;
+    border-radius: 25px;
+    padding: 8px;
 }
 
 label.text-label {
-
+    position: absolute;
+    top: -1.2rem;
+    left: 20px;
+    z-index: 2;
+    background-color: var(--gray-x-11-gray);
+    font-size: 1.5rem;
 }
 
 input.text-field {
     width: 100%;
     border: none;
     border-radius: inherit;
+    height: 38px;
 }
 
 button.form-submit {
