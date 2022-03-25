@@ -67,42 +67,62 @@ img.background-image{
     --content-width: 90%;
 }
 
-.tabs {
+div.tabs {
     height: 10%;
     width: var(--content-width);
     display: flex;
 }
 
-.tab {
+button.tab {
     border-style: none;
     height: 100%;
     width: 50%;
     border-radius: 25px 25px 0 0;
 }
 
-.tab-active {
+button.tab-active {
     background-color: var(--gray-x-11-gray);
 }
 
-.tab-inactive {
+button.tab-inactive {
     background-color: var(--nickel);
 }
 
-.user-data {
+form.user-data {
     background-color: var(--gray-x-11-gray);
     height: 80%;
     width: var(--content-width);
-    padding: 20px;
+    padding: 0 20px;
     border-radius: 0 0 25px 25px;
 
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 
-.text-label {
-    display: block;
+form.user-data>fieldset{
+    border: 1px solid;
+    border-radius: 25px;;
+    padding: 2px;
 }
 
-.text-field {
-    display: block;    
+label.text-label {
+
+}
+
+input.text-field {
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+}
+
+button.form-submit {
+    border-style: none;
+    background-color: var(--nickel);
+    color: var(--light-grullo);
+    font-size: 3rem;
+    border-radius: 10px;
+    padding: 10px;
+    justify-self: flex-end;
+    font-weight: 700;
 }
