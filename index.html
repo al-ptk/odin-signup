@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,28 +34,43 @@
                     <label class="text-label" for="user-name">
                         &nbsp;User Name&nbsp;
                     </label>
-                    <input class="text-field" type="text" id="user-name">
+                    <input class="text-field" 
+                            id="user-name"
+                            type="text"
+                            minlength="6"
+                            maxlength="15"
+                            required>
                 </fieldset>
 
                 <fieldset class="input-container">
                     <label class="text-label" for="email">
                         &nbsp;E-mail&nbsp;
                     </label>
-                    <input class="text-field" type="email" id="email">
+                    <input  class="text-field" 
+                            type="email" 
+                            id="email"
+                            required>
                 </fieldset>
 
                 <fieldset class="input-container">
                     <label for="password" class="text-label">
                         &nbsp;Password&nbsp;
                     </label>
-                    <input class="text-field" type="password" id="password">
+                    <input  class="text-field" 
+                            type="password" 
+                            id="password"
+                            pattern="^[a-zA-Z0-9]{6,}$"
+                            required>
                 </fieldset>
 
                 <fieldset class="input-container">
                     <label class="text-label" for="password-confirmation">
                         &nbsp;Confirm Password&nbsp;
                     </label>
-                    <input class="text-field" type="password id="password-confirmation">
+                    <input  class="text-field" 
+                            type="password" 
+                            id="password-confirmation"
+                            required>
                 </fieldset>
 
                 <button type="submit" class="form-submit">GET STARTED</button>
